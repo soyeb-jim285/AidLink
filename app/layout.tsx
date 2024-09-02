@@ -6,7 +6,7 @@ import { Header } from "@/components/header";
 import { cn } from "@/lib/utils";
 import { fontSans } from "@/lib/fonts";
 import { TailwindIndicator } from "@/components/tailwind-indicator";
-
+import { SpeedInsights } from "@vercel/speed-insights/next";
 export const metadata: Metadata = {
   title: "AidLink - Your Link to Aid",
   description:
@@ -41,6 +41,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             </div>
             <TailwindIndicator />
           </ThemeProvider>
+          <SpeedInsights />
         </body>
       </html>
     </ClerkProvider>
